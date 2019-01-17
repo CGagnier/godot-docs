@@ -332,13 +332,13 @@ Let's see some examples.
 
         public class BotStatsTable : Resource
         {
-            private Godot.Dictionary<String, BotStats> _stats = new Godot.Dictionary<String, BotStats>();
+            private Godot.Collections.Dictionary<String, BotStats> _stats = new Godot.Collections.Dictionary<String, BotStats>();
 
             public BotStatsTable()
             {
                 _stats["GodotBot"] = new BotStats(10); // Creates instance with 10 health.
                 _stats["DifferentBot"] = new BotStats(20); // A different one with 20 health.
-                Godot.print(_stats);
+                GD.print(_stats);
             }
         }
 
